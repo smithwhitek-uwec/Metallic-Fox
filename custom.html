@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metallic Fox - About Us</title>
+    <title>Metallic Fox - Custom Products</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,29 +35,59 @@
         </div>
     </header>
     <main>
-        <div id="about-us">
-            <h1>About Us</h1>
-            <p>Learn more about Metallic Fox and our commitment to being inclusive, ethical and sustainable.</p>
-        </div>
-        <section class="about">
-            <div class="collage">
-                <img src="images/making-jewelry2.jpg" alt="A person making jewelry">
-            </div>
-            <div class="text">
-                <h2>Founders</h2>
-                <p>Metallic Fox was founded by a group of passionate individuals who share a common vision of creating unique, high-quality products that make a difference.</p>
-            </div>
-            <div class="text">
-                <h2>Our Story</h2>
-                <p>We began as a small team with a big dream: to create products that not only look great but also make a positive impact on the world.</p>
-            </div>
-            <div class="collage">
-                  <img src="images/making-jewelry.jpg" alt="A person making jewelry">
-            </div>
+        <section class="custom">
+            <h1>Custom Product Form</h1>
+            <form>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname">
+
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="product">Product</label>
+                <select id="product" name="product">
+                    <option value="">Select a Product Type</option>
+                    <option value="bag">Bag</option>
+                    <option value="jewelry">Jewelry</option>
+                    <option value="hat">Hat</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="size">Size</label>
+                <input type="text" id="size" name="size">
+
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color">
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea>
+
+                <label for="files">Images</label>
+                <input type="file" id="files" name="files" accept=".jpg,.jpeg,.png,.pdf" multiple>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
-        <section class="sustainability"> <!-- Add lines using background image in CSS -->
-            <h2>Sustainability</h2>
-            <p>We are committed to sustainability and ethical practices in all aspects of our business. In order to achieve this, we work with local suppliers and use eco-friendly materials whenever possible.</p>
+        <section class="waitlist">
+            <div class="waitlist-form">
+                <h2>Waitlist</h2>
+                <p>Join our waitlist to know when availability for custom products is confirmed. It allows you to be notified as soon as slots are available. There may be delays caused by new releases.</p>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Sign Up</button>
+                </form>    
+            </div> 
+            <div class="waitlist-images">
+                <div id="bag">Bag</div>
+                <div id="jewelry">Jewelry</div>
+                <div id="hat">Hat</div>
+            </div>
         </section>
     </main>
     <footer>

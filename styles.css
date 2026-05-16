@@ -29,9 +29,9 @@ header {
     flex-wrap: wrap;
     background-color: var(--light-green);
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .dropdown {
@@ -40,7 +40,9 @@ header {
 
 #shop {
     width: 6rem;
-    
+    align-self: center;
+    padding-top: 1rem;
+    margin-left: 1rem;
 }
 
 #logo {
@@ -76,7 +78,6 @@ header {
 }
 
 .dropdown {
-    position: relative;
     display: inline-block;
 }
 
@@ -86,7 +87,7 @@ header {
     top: 100%;
     left: 0;
     background-color: var(--yellow);
-    min-width: 160px;
+    width: 160px;
     z-index: 1;
 }
 
